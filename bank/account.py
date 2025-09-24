@@ -1,24 +1,27 @@
 class Account:
-    def __init__(self,balance=0.0):
+    def __init__(self,balance: float=0.0):
         #عشان تسوي حساب جديد
         self.balance = float(balance)
         #احفظ فلوسه 
-        #كيف يودع؟
+        #كيف يودع؟A
                             #صحح mony ب money
-        def deposit(self, mony):
-            self.balance +=mony
-            return self.balance
-            if mony <=0:
-                raise ValueError("worong ! invalid number")
+        #الايداع لازم فوق 0 
+    def deposit(self, money: float):
+        if money <= 0:
+            raise ValueError("worong ! invalid number")
             
-        def withdraw(self,mony):
+        self.balance += float(money)
+        return self.balance
+            
+            
+    def withdraw(self,money: float):
             #تاكد من المبلغ المسحوب
             #لذل الرصيد لايسمح
-            if mony <= self.balance:
-                raise ValueError("you balance is not enough")
+        if money <= 0:
+            raise ValueError("you balance is not enough")
+            #ممنوع يودع اكضر من رصيده
+        if money > self.balance:
+            raise ValueError("balance does not allow")
                 #بعد التاكيد ان المبلغ كافي وحول يخصم المبلغ
-                self.balance -= mony 
-                return True
-            else:
-                return False
-                
+            self.balance -= float (money) 
+            return self.balance
