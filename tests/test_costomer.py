@@ -5,18 +5,19 @@ from bank.account import Account #تجربة كاينات اكاون
 
 class TestCust(unittest.TestCase): #
     def test_cust_id(self): # id pass name
-        cust = Customer(id="10001" , name="Faris" , password="asd123456")# 
+        cust = Customer(id="10001" , frist_name="Faris" ,last_name="ALshehri", password="asd123456")# 
 
         self.assertEqual(cust.id , "10001")
 
 
-        self.assertEqual(cust.name , "Faris")
+        self.assertEqual(cust.first_name , "Faris")
+        self.assertEqual(cust.last_name , "ALshehri")
         self.assertEqual(cust.password , "asd123456")
 
 
     def test_acco_id(self):
 
-        cust = Customer(id="10002", name="Rose", password="asd654321")
+        cust = Customer(id="10002", first_name="Rose",last_name="saeed", password="asd654321")
 
         self.assertEqual(type(cust.checking), Account)
         self.assertEqual(cust.checking.balance, 0.0)
