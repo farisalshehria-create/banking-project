@@ -5,7 +5,7 @@ from bank.account import Account #تجربة كاينات اكاون
 
 class TestCust(unittest.TestCase): #
     def test_cust_id(self): # id pass name
-        cust = Customer(id="10001" , frist_name="Faris" ,last_name="ALshehri", password="asd123456")# 
+        cust = Customer(id="10001" , first_name="Faris" ,last_name="ALshehri", password="asd123456")# 
 
         self.assertEqual(cust.id , "10001")
 

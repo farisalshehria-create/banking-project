@@ -9,8 +9,8 @@ class Customer:
         
         #
         
- #       #self.checking = Account(checking_balance)
- #      #self.savings= Account (savings_balance)
+        self.checking = Account(checking_balance)
+        self.savings= Account (savings_balance)
         #
         
 
