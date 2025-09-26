@@ -23,5 +23,5 @@ class Account:
         if money > self.balance:
             raise ValueError("balance does not allow")
                 #بعد التاكيد ان المبلغ كافي وحول يخصم المبلغ
-            self.balance -= float (money) 
-            return self.balance
+        self.balance -= float (money) 
+        return self.balance
