@@ -47,4 +47,17 @@ class Customer:
             return True 
         else:
             raise ValueError("invalid accounts")
+        
+        #ناكد الباس
+    def check_password(self, inputPass):
+        if inputPass != self.password:
+            #اقارن بين الباس الي دخلته والباس المسجل
+            #اذا غلط 
+            raise ValueError("in correct password")
+        
+        #اذا صح خلاص
+        return True 
+    
+
+
     
