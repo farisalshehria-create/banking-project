@@ -23,11 +23,18 @@ class Customer:
         self.savings_balance= Account(savings_balance)
         # القيم بدون الطلبات
 
+
+
+
 #العمليات
     def transfer(self, from_acct, to_acct, money):
 
         if money <=0:
             raise ValueError("worong ! invalid number")
+        
+
+
+
     
         if from_acct == "checking" and to_acct == "savings":
 
@@ -36,7 +43,14 @@ class Customer:
             self.checking.withdraw(money)
             self.savings.deposit(money)
 
+
             return True
+        
+
+
+
+
+
         elif from_acct == "savings" and to_acct == "checking":
             if self.savings.balance < money:
 
@@ -47,6 +61,10 @@ class Customer:
             return True 
         else:
             raise ValueError("invalid accounts")
+        
+
+
+
         
         #ناكد الباس
     def check_password(self, inputPass):
