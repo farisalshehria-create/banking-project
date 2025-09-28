@@ -40,8 +40,8 @@ ValueError: you cant your balance > -100
 # These were quick tests
 # but there are tests from scratch!
 #                                    create account
->>> Ali = Customer(id="60010", first_name="Ali", last_name="saeed", password="qwer1234", checking_balance=0.
-0,savings_balance=0.0)
+>>> Ali = Customer(id="60010", first_name="Ali", last_name="saeed", password="qwer1234", checking_balance=0.0,savings_balance=0.0)
+
 #                             if you enter the worong password
 >>> Ali.check_password("hjhgklb")
 ValueError: in correct password
