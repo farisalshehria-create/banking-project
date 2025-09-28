@@ -8,13 +8,11 @@ class TestCust(unittest.TestCase): #
         cust = Customer(id="10001" , first_name="Faris" ,last_name="ALshehri", password="asd123456")# 
 
         self.assertEqual(cust.id , "10001")
-
-
         self.assertEqual(cust.first_name , "Faris")
         self.assertEqual(cust.last_name , "ALshehri")
         self.assertEqual(cust.password , "asd123456")
 
-
+#انشا عميل ولازم ارصدته 0
     def test_acco_id(self):
 
         cust = Customer(id="10002", first_name="Rose",last_name="saeed", password="asd654321")
@@ -24,7 +22,7 @@ class TestCust(unittest.TestCase): #
 
         self.assertEqual(cust.savings.balance, 0.0)
     
-    # تجربة الاختبار 
+  
 if __name__ == "__main__":
 
     unittest.main()

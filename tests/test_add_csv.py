@@ -7,9 +7,9 @@ class TestaddCSV (unittest.TestCase):
     def test_add_customer_row(self):
         
         countBefore = len(rows_csv())# عشان يشغله ويقرا كل الصفوف
-        add_cost("10010", "Nora", "M", "cxz123456", 500.0,2000.0)
+        add_cost("10010", "Nora", "M", "cxz123456", 500.0,2000.0)#نظيف عميل جديد
        
-        countAfter = len(rows_csv())
+        countAfter = len(rows_csv())# يحسب الصفوف
         self.assertEqual(countAfter, countBefore + 1)# kjh;] lk lkil dsh,,k 1
 
         last_row = rows_csv() [-1]# التعريفر عشان الاختبار
